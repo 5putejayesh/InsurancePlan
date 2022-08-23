@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name="PLAN_CATEGORY")
 public class PlanCategory {
@@ -36,49 +39,5 @@ public class PlanCategory {
 	private String updatedBy;
 	
 	
-	public Integer getPlanCatId() {
-		return planCatId;
-	}
-	public void setPlanCatId(Integer planCatId) {
-		this.planCatId = planCatId;
-	}
-	public String getPlanCatName() {
-		return planCatName;
-	}
-	public void setPlanCatName(String planCatName) {
-		this.planCatName = planCatName;
-	}
-	public String getActive_sw() {
-		return active_sw;
-	}
-	public void setActive_sw(String active_sw) {
-		this.active_sw = active_sw;
-	}
-	public LocalDate getCreatedDate() {
-		return createdDate;
-	}
-	public void setCreatedDate(LocalDate createdDate) {
-		this.createdDate = createdDate;
-	}
-	public LocalDate getUpdatedDate() {
-		return updatedDate;
-	}
-	public void setUpdatedDate(LocalDate updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-	public String getCreatedBy() {
-		return createdBy;
-	}
-	public void setCreatedBy(String createdBy) {
-		this.createdBy = createdBy;
-	}
-	public String getUpdatedBy() {
-		return updatedBy;
-	}
-	public void setUpdatedBy(String updatedBy) {
-		this.updatedBy = updatedBy;
-	}
 	
-	
-
 }
