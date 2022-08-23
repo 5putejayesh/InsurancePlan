@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: jayesh
+    url: jdbc:h2:mem:insPlanDB
+    username: jayesh
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+    show-sql: true
+    
+plan-api: 
+ messages:
+   planSaved: Plan Saved Successfully
+   planNotSaved: Plan Not Saved Successfully
+   planUpdated: Paln Updated
+   planNotUpdated: Paln Not Updated
+   planDeleted: Plan deleted
+   planNotDeleted: Plan Not deleted
+   planStatusChnaged: Plan Status Chnaged Successfully
+   planStatusNotChnaged: Plan Status Chnaged Successfully

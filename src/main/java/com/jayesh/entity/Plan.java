@@ -32,16 +32,16 @@ public class Plan {
 	@Column(name="ACTIVE_SW")
 	private String active_sw;
 	
-	@Column(name="CREATE_DATE")
+	@Column(name="CREATE_DATE",updatable = false)
 	private LocalDate createdDate;
 	
-	@Column(name="UPDATE_DATE")
+	@Column(name="UPDATE_DATE",insertable = false)
 	private LocalDate updatedDate;
 	
-	@Column(name="CREATED_BY")
+	@Column(name="CREATED_BY",updatable = false)
 	private String createdBy;
 	
-	@Column(name="UPDATED_BY")
+	@Column(name="UPDATED_BY",insertable=false)
 	private String updatedBy;
 
 	public Integer getPlanId() {
