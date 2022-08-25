@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import lombok.Data;
 
 @Data
@@ -23,13 +26,15 @@ public class PlanCategory {
 	@Column(name="CATEGORY_NAME")
 	private String planCatName;
 	
-	@Column(name="ACTIVE_SW")
+	@Column(name="ACTIVE_SW",length = 1)
 	private String active_sw;
 	
 	@Column(name="CREATE_DATE")
+	@CreationTimestamp
 	private LocalDate createdDate;
 	
 	@Column(name="UPDATE_DATE")
+	@UpdateTimestamp
 	private LocalDate updatedDate;
 	
 	@Column(name="CREATED_BY")
